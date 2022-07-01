@@ -17,3 +17,6 @@ solomon585858 Platform repository
  - С использованием параметров maxSurge и maxUnavailable реализованы дваr сценария - blue-green, Reverse Rolling Update
  - Подготовлен манифест Deployment frontend-deployment для сервиса frontend c Readiness Probe
  - Подготовлен манифест DaemonSet/Namespace для развертывания Node Exporter для Prometheus на всех узлах кластера Kubernetes
+
+## Homework 3
+ - Подготовлены манифесты для Service Accounts, Namespaces, Rolebindings, Clusterrolebindings для трех разных задач
