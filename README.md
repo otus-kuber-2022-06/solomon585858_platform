@@ -20,3 +20,7 @@ solomon585858 Platform repository
 
 ## Homework 3
  - Подготовлены манифесты для Service Accounts, Namespaces, Rolebindings, Clusterrolebindings для трех разных задач
+
+## Homework 4
+ - Проведена работа с тестовым веб-приложением
+ - Настроен доступ к приложению извне кластера
