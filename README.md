@@ -24,3 +24,7 @@ solomon585858 Platform repository
 ## Homework 4
  - Проведена работа с тестовым веб-приложением
  - Настроен доступ к приложению извне кластера
+
+## Homework 5
+ - Подготовлены манифесы для StatefulSet, HeadlessService
+
