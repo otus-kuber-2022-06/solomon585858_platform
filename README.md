@@ -28,3 +28,8 @@ solomon585858 Platform repository
 ## Homework 5
  - Подготовлены манифесы для StatefulSet, HeadlessService
 
+## Homework 6
+ - Развернут кластер GKE
+ - Подготовлены HELM чарты для сервисов hipster-shop
+ - Подготовлены манифесты с помощью kubecfg/kustomize
+
