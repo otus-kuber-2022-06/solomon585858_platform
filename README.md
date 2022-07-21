@@ -69,7 +69,6 @@ $ kubectl port-forward --namespace monitoring svc/kube-stack-prometheus-kube-pro
 ```
 ```
 Connect to Grafana:
-```
 $ kubectl get secret --namespace monitoring kube-stack-prometheus-grafana -o jsonpath='{.data.admin-user}' | base64 -d
 $ kubectl get secret --namespace monitoring kube-stack-prometheus-grafana -o jsonpath='{.data.admin-password}' | base64 -d
 $ kubectl port-forward --namespace monitoring svc/kube-stack-prometheus-grafana 8080:80
