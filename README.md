@@ -73,4 +73,4 @@ $ kubectl get secret --namespace monitoring kube-stack-prometheus-grafana -o jso
 $ kubectl get secret --namespace monitoring kube-stack-prometheus-grafana -o jsonpath='{.data.admin-password}' | base64 -d
 $ kubectl port-forward --namespace monitoring svc/kube-stack-prometheus-grafana 8080:80
 ```
-![Nginx Prometheus Exporter Dashboard](https://pasteboard.co/E6tWdmdtMIqM.png)
+[![Nginx-Prometheus-Exporter-Dashboard.png](https://i.postimg.cc/nrjrkXvK/Nginx-Prometheus-Exporter-Dashboard.png)](https://postimg.cc/K3bmcvp4)
