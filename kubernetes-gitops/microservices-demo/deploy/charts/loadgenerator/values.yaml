@@ -1,0 +1,5 @@
+image:
+  repository: solomon5858558/loadgenerator
+  tag: latest
+ingress:
+  host: boutique.35.205.240.67.nip.io

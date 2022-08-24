@@ -35,6 +35,9 @@ solomon585858 Platform repository
 
 ## Homework 7
  - Подготовлены CR, CRD, Operator для MySQL
+
+## Homework 8
+ - Проведено ознакомление с инструментами Flagger, Flux, Istio
 ```
 $ kubectl get jobs
 NAME                         COMPLETIONS   DURATION   AGE
