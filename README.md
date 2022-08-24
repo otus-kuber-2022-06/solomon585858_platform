@@ -36,8 +36,6 @@ solomon585858 Platform repository
 ## Homework 7
  - Подготовлены CR, CRD, Operator для MySQL
 
-## Homework 8
- - Проведено ознакомление с инструментами Flagger, Flux, Istio
 ```
 $ kubectl get jobs
 NAME                         COMPLETIONS   DURATION   AGE
@@ -77,3 +75,7 @@ $ kubectl get secret --namespace monitoring kube-stack-prometheus-grafana -o jso
 $ kubectl port-forward --namespace monitoring svc/kube-stack-prometheus-grafana 8080:80
 ```
 [![Nginx-Prometheus-Exporter-Dashboard.png](https://i.postimg.cc/nrjrkXvK/Nginx-Prometheus-Exporter-Dashboard.png)](https://postimg.cc/K3bmcvp4)
+
+
+## Homework 9
+ - Проведено ознакомление с инструментами Flagger, Flux, Istio
