@@ -79,3 +79,25 @@ $ kubectl port-forward --namespace monitoring svc/kube-stack-prometheus-grafana 
 
 ## Homework 9
  - Проведено ознакомление с инструментами Flagger, Flux, Istio
+
+
+```
+$ kubectl describe pod -l app=frontend -n microservices-demo
+Name:         frontend-7bf54b569-qkklb
+Namespace:    microservices-demo
+...
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  20s   default-scheduler  Successfully assigned microservices-demo/frontend-7bf54b569-qkklb to gke-mycluster-default-pool-be1086e0-2nml
+  Normal  Pulling    17s   kubelet            Pulling image "solomon5858558/frontend:v0.0.2"
+  Normal  Pulled     15s   kubelet            Successfully pulled image "solomon5858558/frontend:v0.0.2" in 2.630767651s
+  Normal  Created    15s   kubelet            Created container server
+  Normal  Started    15s   kubelet            Started container server
+```
+  
+```$ helm history frontend -n microservices-demo
+REVISION        UPDATED                         STATUS          CHART           APP VERSION     DESCRIPTION
+1               Wed Aug 24 10:42:00 2022        superseded      frontend-0.21.0 1.16.0          Install complete
+2               Wed Aug 24 10:56:51 2022        deployed        frontend-0.21.0 1.16.0          Upgrade complete
+```
