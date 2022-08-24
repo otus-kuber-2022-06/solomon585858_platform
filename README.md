@@ -101,3 +101,15 @@ REVISION        UPDATED                         STATUS          CHART           
 1               Wed Aug 24 10:42:00 2022        superseded      frontend-0.21.0 1.16.0          Install complete
 2               Wed Aug 24 10:56:51 2022        deployed        frontend-0.21.0 1.16.0          Upgrade complete
 ```
+```
+Events:
+  Type     Reason  Age                From     Message
+  ----     ------  ----               ----     -------
+...
+  Normal   Synced  5m30s              flagger  New revision detected! Scaling up frontend.microservices-demo
+  Normal   Synced  4m30s              flagger  Starting canary analysis for frontend.microservices-demo
+  Normal   Synced  4m30s              flagger  Advance frontend.microservices-demo canary weight 5
+  Normal   Synced  3m30s              flagger  Advance frontend.microservices-demo canary weight 10
+  Normal   Synced  2m20s               flagger  Advance frontend.microservices-demo canary weight 15
+  ...
+```
