@@ -354,3 +354,33 @@ Key                        Value
 revocation_time            1661430684
 revocation_time_rfc3339    2022-08-25T12:31:24.587858956Z
 ```
+
+## Homework 12
+ - Установлен CSI Driver, развернуты StorageClass, PV/PVC, Pod и протестирована работа снапшотов
+```
+$ kubectl get sc
+NAME                 PROVISIONER             RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
+csi-hostpath-sc      hostpath.csi.k8s.io     Delete          WaitForFirstConsumer   false                  6s
+```
+```
+$ kubectl get pvc
+NAME          STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS      AGE
+storage-pvc   Bound    pvc-de948d78-3400-42d6-8dc0-94774d7e29d8   1Gi        RWO            csi-hostpath-sc   7s
+```
+```
+$ kubectl get pv
+NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                 STORAGECLASS      REASON   AGE
+pvc-de948d78-3400-42d6-8dc0-94774d7e29d8   1Gi        RWO            Delete           Bound    default/storage-pvc   csi-hostpath-sc            10s
+```
+```
+$ kubectl get po
+NAME                   READY   STATUS    RESTARTS   AGE
+...
+storage-pod            1/1     Running   0          6s
+```
+```
+```
+$ kubectl get volumesnapshot
+NAME           READYTOUSE   SOURCEPVC     SOURCESNAPSHOTCONTENT   RESTORESIZE   SNAPSHOTCLASS            SNAPSHOTCONTENT                                    CREATIONTIME   AGE
+csi-snapshot   true         storage-pvc                           1Gi           csi-hostpath-snapclass   snapcontent-0aaba314-d0e6-43f7-bee1-482652520c3c   78s            78s
+```
