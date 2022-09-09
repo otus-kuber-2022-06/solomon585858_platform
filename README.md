@@ -360,7 +360,7 @@ revocation_time_rfc3339    2022-08-25T12:31:24.587858956Z
 ```
 $ kubectl get sc
 NAME                 PROVISIONER             RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
-csi-hostpath-sc      hostpath.csi.k8s.io     Delete          WaitForFirstConsumer   false                  6s
+csi-hostpath-sc      hostpath.csi.k8s.io     Delete          Immediate              true                   5s
 ```
 ```
 $ kubectl get pvc
