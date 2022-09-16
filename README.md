@@ -379,8 +379,10 @@ NAME                   READY   STATUS    RESTARTS   AGE
 storage-pod            1/1     Running   0          6s
 ```
 ```
-```
 $ kubectl get volumesnapshot
 NAME           READYTOUSE   SOURCEPVC     SOURCESNAPSHOTCONTENT   RESTORESIZE   SNAPSHOTCLASS            SNAPSHOTCONTENT                                    CREATIONTIME   AGE
 csi-snapshot   true         storage-pvc                           1Gi           csi-hostpath-snapclass   snapcontent-0aaba314-d0e6-43f7-bee1-482652520c3c   78s            78s
 ```
+
+## Homework 13
+ - Протестирована работа инструментов kubectl debug и iptables-tailer
